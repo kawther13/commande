@@ -37,5 +37,45 @@ public class OrderLine {
 	@JoinColumn(name="order_id", referencedColumnName="id")
     private Command command;
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getOrderNumber() {
+		return orderNumber;
+	}
+
+	public void setOrderNumber(Long orderNumber) {
+		this.orderNumber = orderNumber;
+	}
+
+	public Long getOrderSum() {
+		return orderSum;
+	}
+
+	public void setOrderSum(Long orderSum) {
+		this.orderSum = orderSum;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public Command getCommand() {
+		return command;
+	}
+
+	public void setCommand(Command command) {
+		this.command = command;
+	}
+
 
 }
